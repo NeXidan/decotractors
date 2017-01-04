@@ -5,5 +5,5 @@ module.exports = decoratorsRequire
     .map(decoratorsRequire)
     .reduce((decorators, module) => {
         const {__esModule, ...decorator} = module;
-        return Object.assign(decorators, decorator);
+        return {...decorators, ...decorator};
     }, {});
