@@ -3,3 +3,5 @@
 /.idea
 /.npmignore
 /.gitignore
+/hooks
+webpack.config.*
