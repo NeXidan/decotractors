@@ -10,7 +10,7 @@
     "build": "webpack && webpack --config webpack.config.min.js"
   },
   "dependencies": {},
-  "main": "src/decotractors.js",
+  "main": "dist/decotractors.js",
   "repository": "git@github.com:nexidan/decotractors.git",
   "devDependencies": {
     "babel-cli": "^6.18.0",
