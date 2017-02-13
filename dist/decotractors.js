@@ -146,7 +146,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.Singleton = Singleton;
 	function Singleton(factory) {
 	    return function (TargetClass) {
-	        var INSTANCE = Symbol('__instance__');
+	        var INSTANCE = '__instance__';
 
 	        TargetClass.getInstance = function () {
 	            var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
