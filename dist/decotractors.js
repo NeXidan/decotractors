@@ -117,7 +117,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var value = prototype[key];
 
 	            if (merge) {
-	                merge(value, TargetComponent.prototype[key]);
+	                (0, _lodash.merge)(value, TargetComponent.prototype[key]);
 	            }
 
 	            Object.defineProperty(TargetComponent.prototype, key, {

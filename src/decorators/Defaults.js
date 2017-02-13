@@ -1,4 +1,4 @@
-import {merge} from 'lodash';
+import {merge as lodashMerge} from 'lodash';
 
 export function Defaults(prototype = {}, {merge, ...options} = {}) {
     return function (TargetComponent) {
@@ -6,7 +6,7 @@ export function Defaults(prototype = {}, {merge, ...options} = {}) {
             let value = prototype[key];
 
             if (merge) {
-                merge(value, TargetComponent.prototype[key]);
+                lodashMerge(value, TargetComponent.prototype[key]);
             }
 
             Object.defineProperty(TargetComponent.prototype, key, {
