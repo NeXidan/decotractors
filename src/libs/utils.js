@@ -12,6 +12,7 @@ export function decorateFunction(func) {
                     // attach this function to the instance (not the class)
                     Object.defineProperty(this, key, {
                         configurable: true,
+                        writable: true,
                         enumerable: descriptor.enumerable,
                         value: func(descriptor.value, ...args)
                     });
